@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menuPrincipal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+  }
+  
+  #menuPrincipal ul {
+    list-style-type: none; /*tira o marcador do item*/
+    background-color: gray;
+    text-align: center;
+  }
+  
+  #menuPrincipal ul li {
+    display: inline-block;
+  }
+  
+  #menuPrincipal ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    color: antiquewhite;
+  }
+  
+  #menuPrincipal ul li a:hover {
+    background-color: black;
+  }
+  
+  #contPrincipal {
+    background-color: green;
+    height: 100vh; /*viewport horizontal*/
+  }
+  
+  #contSobre {
+    background-color: lightblue;
+    height: 100vh;
+  }

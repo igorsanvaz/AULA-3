@@ -1,20 +1,88 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aula 3 com JS</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aula 3 com JS</title>
 
-    <script type="text/javascript" src="/codigo.js"></script>
+<link rel="stylesheet" href="css/estilo.css" />
+<script type="text/javascript" src="/js/codigo.js"></script>
+</head>
+<body>
+<h1>Teste</h1>
 
-  </head>
-  <body>
-    <h1>Teste</h1>
+<button type="button" onclick="alert('Mensagem disparada pelo button')">
+  Clique aqui
+</button>
 
-    <button type="button" onclick="alert('clique aqui')">
-    clique aqui</button>
+<script>
+  //   console.log("Teste de saída no console do browser");
+  //   console.log("Outra frase qualquer");
 
+  //   let nome;
+  //   nome = "Eduardo Ribeiro";
+  //   console.log(nome);
+  //   nome = 44;
+  //   console.log(nome);
 
-  </body>
+  //   //amplo
+  //   var idade = 30;
+  //   console.log(idade);
+  //   { //bloco
+  //     let idade = 33;
+  //     console.log(idade);
+  //   }
+  //   console.log(idade);
+
+  //   const nome = "Eduardo";
+  //   console.log(nome);
+
+  let idade = 32;
+  let num = 22;
+  let resp = idade + num;
+  console.log(resp);
+  console.log(typeof resp);
+
+  let nomes = [];
+  nomes.push("Ana");
+  nomes.push("Felipe");
+  nomes.push(23); //sempre no final
+  nomes.unshift("Ribeiro"); //sempre no inicio do array
+  nomes.unshift("Flavia");
+  nomes[6] = "Rodrigo";
+
+  console.log("O tamanho do array é ", nomes.length);
+
+  console.log(nomes);
+  let ultimo = nomes.pop();
+  console.log(nomes);
+  console.log(ultimo);
+
+  delete nomes[2];
+  console.log(nomes);
+
+  for (let i = 0; i < nomes.length; i++) {
+    console.log("o Valor", nomes[i], " esta na posicao:", i);
+  }
+
+  for (x of nomes) {
+    console.log("O conteudo é: ", x);
+  }
+</script>
+<div>
+  <nav id="menuPrincipal">
+    <ul>
+      <li><a href="#contPrincipal">Item 1</a></li>
+      <li><a href="#contSobre">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+      <li><a href="#">Item 4</a></li>
+      <li><a href="#">Item 5</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div id="contPrincipal">
+  <h1 id="titPrincipal">Teste div principal</h1>
+</div>
+<div id="contSobre">
+  <h1>Teste div Sobre</h1>
+</div>
+</body>
 </html>
