@@ -4,10 +4,11 @@
 
 <link rel="stylesheet" href="style.css" />
 <script type="text/javascript" src="codigo.js"></script>
+<link  rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">/>
 </head>
 <body>
-
-
 <script>
   //   console.log("Teste de saída no console do browser");
   //   console.log("Outra frase qualquer");
@@ -85,5 +86,28 @@
   Cum enim deleniti saepe neque vitae expedita quibusdam voluptate necessitatibus totam facere soluta sit commodi inventore reiciendis, qui eum similique voluptatem nulla. Qui incidunt ipsum reiciendis sunt, ullam architecto? Porro.
   Iste alias nobis pariatur veniam doloremque? Natus nulla quos enim dolor, voluptatibus distinctio neque nostrum commodi facilis iusto minima possimus, sed sequi in molestiae dolorem aperiam vitae maiores aliquid reprehenderit?</p>
 </div>
+
+<div id="contCalculo">
+  <div id="ControledeCalculo">
+   
+    <div>
+      <label>Largura</label>
+      <input id="idtLargura" type="text" placeholder="Digite a largura"/>
+    </div> 
+    <div>
+      <label for="edtAltura">Altura</label>
+      <input id="edtAltura" type="number" placeholder="digire a altura"/>
+     </div> 
+     <div>
+    <button id="btnCalculo" type="button" onclick= "calcular()">
+      Calcular
+    </button>
+    </div>
+    <div id="areaRespCalculo">
+      <p>Area de resposta: </p>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

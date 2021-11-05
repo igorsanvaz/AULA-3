@@ -1,51 +1,64 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  #menuPrincipal {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 100vw;
-  }
-  
-  #menuPrincipal ul {
-    list-style-type: none; /*tira o marcador do item*/
-    background-color: gray;
-    text-align: center;
-  }
-  
-  #menuPrincipal ul li {
-    display: inline-block;
-  }
-  
-  #menuPrincipal ul li a {
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-    color: antiquewhite;
-  }
-  
-  #menuPrincipal ul li a:hover {
-    background-color: black;
-  }
-  
-  #contPrincipal {
-    background-color: green;
-    height: 100vh; /*viewport horizontal*/
-  }
-  
-  #contSobre {
-    background-color: lightblue;
-    height: 100vh;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  html{
+#menuPrincipal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100vw;
+}
+
+#menuPrincipal ul {
+  list-style-type: none; /*tira o marcador do item*/
+  background-color: gray;
+  text-align: center;
+}
+
+#menuPrincipal ul li {
+  display: inline-block;
+}
+
+#menuPrincipal ul li a {
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  color: antiquewhite;
+}
+
+#menuPrincipal ul li a:hover {
+  background-color: black;
+}
+
+#contPrincipal {
+  background-color: green;
+  height: 100vh; /*viewport horizontal*/
+}
+
+#contSobre {
+  background-color: lightblue;
+  height: 100vh;
+}
+
+/* html{
       font-size: 20px;
+  } */
+
+#contSobre p {
+  font-size: 1rem;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  #contSobre p {
+    font-size: 10px;
   }
-  
-  #contSobre p{
-      font-size: 1rem;
-      font-style: italic;
-  }
+}
+#contCalculo {
+  display: flex;
+  align-items: center;
+  background-color: lightsalmon;
+  height: 50vh;
+}

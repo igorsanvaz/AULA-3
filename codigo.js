@@ -1,47 +1,24 @@
-// console.log("teste de saida  js");
-       
-//         console.log("teste de saida")
-        
-//         let nome;
-//         nome = "Igor Santos Vaz"
-//         console.log(nome)
-//         nome= 5
-//         console.log(nome)
+function calcular() {
+  let largura;
+  let altura;
 
-//         var idade = 21
-//         console.log(idade)
-//         {
-//             let idade = 33
-//             console.log(idade)
-//         }
-//         console.log(idade)
+  largura = document.getElementById("idtLargura").value;
+  altura = document.getElementById("edtAltura").value;
 
-//         const bobo = "guilherme"        
-//         console.log(bobo);
-        
-//         let nomes = []
-//         nomes.push("Ana")
-//         nomes.push("Lana")
-//         nomes.push(25)
-//         nomes.unshift("igor")
-//         nomes[5] = 777 
-//         console.log(nomes);
-//         console.log(typeof nomes[3]);
-//         console.log(nomes[0]);
-//         console.log(nomes)
-//        let ultimo= nomes.pop()
-//         console.log(nomes)
-//         console.log(ultimo);
+  if (largura > 0 && altura > 0) {
+    let resp = largura * altura;
+    let apresentacao = document.getElementById("areaRespCalculo");
+    let textoresp = document.createElement("p");
+    textoresp.append("O valor em m2 é: " + resp);
+    apresentacao.appendChild(textoresp);
 
-//         delete nomes[2]
-//         console.log(nomes);
+    limparcampos();
+  } else {
+    alert("FAVOR INFORMAR 2 VALORES NUMÉRICOS MAIORES QUE ZERO.");
+  }
+}
 
-
-//         for (let i=0; i<nomes.length; i++){
-//             console.log("o valor", nomes[i], "esta na posição " , i)
-//         }
-
-//         for(none of nomes){
-//             console.log("o conteudo é",none)
-//         }
-console.log("Codigo javascript");
+function limparcampos() {
+  document.getElementById("idtLargura").value = null;
+  document.getElementById("edtAltura").value = null;
+}
