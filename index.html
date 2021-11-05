@@ -89,7 +89,6 @@
 
 <div id="contCalculo">
   <div id="ControledeCalculo">
-   
     <div>
       <label>Largura</label>
       <input id="idtLargura" type="text" placeholder="Digite a largura"/>
@@ -99,15 +98,50 @@
       <input id="edtAltura" type="number" placeholder="digire a altura"/>
      </div> 
      <div>
-    <button id="btnCalculo" type="button" onclick= "calcular()">
-      Calcular
-    </button>
+       <button id="btnCalculo" type="button" onclick= "calcular()">
+         Calcular
+       </button>
     </div>
-    <div id="areaRespCalculo">
-      <p>Area de resposta: </p>
-    </div>
+     <div id="areaRespCalculo">
+       <p>Area de resposta: </p>
+     </div>
   </div>
 </div>
-
+  
+ <div id="contTabela">
+    <table id="tabela">
+      <caption>Titulo especifico da tabela</caption>
+      <thead>
+        <tr>
+          <th>coluna 1</th>
+          <th>coluna 2</th>
+          <th>coluna 3</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>conteudo 1</td>
+            <td>conteudo 2</td>
+            <td>conteudo 3</td>
+          </tr>
+          <tr>
+            <td>conteudo 1</td>
+            <td>conteudo 2</td>
+            <td>conteudo 3</td>
+          </tr>
+          <tr>
+            <td>conteudo 1</td>
+            <td>conteudo 2</td>
+            <td>conteudo 3</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Rodapé</td>
+          </tr>
+        </tfoot>
+      </thead>
+    </table>
+ </div>
+ 
 </body>
 </html>

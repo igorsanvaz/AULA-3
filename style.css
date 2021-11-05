@@ -62,3 +62,27 @@
   background-color: lightsalmon;
   height: 50vh;
 }
+
+#contTabela{
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    height: 50vh;
+}
+
+#tabela thead tr th{
+    background-color: lightgreen;
+    text-align: left;
+    padding: 5px;
+}
+
+#tabela{
+    margin: 0 auto;
+    width: 800px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#tabela td {
+    border: 1px solid black;
+    padding: 5px;
+}
