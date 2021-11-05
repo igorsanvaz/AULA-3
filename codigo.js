@@ -21,4 +21,5 @@ function calcular() {
 function limparcampos() {
   document.getElementById("idtLargura").value = null;
   document.getElementById("edtAltura").value = null;
+.
 }
